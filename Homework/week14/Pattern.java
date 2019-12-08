@@ -8,7 +8,7 @@ public class Pattern{
         for(int i = 1; i < list.size(); i++){
             temp = list.get(i);
             if(temp.compareTo(max) > 0)
-                max = temp;  //temp更大
+                max = temp;  //temp > max
         }
         return max;
     }
