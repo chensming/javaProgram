@@ -1,7 +1,3 @@
-package HomeWorkTHua;
-
-import javafx.concurrent.Task;
-
 class TaskPay{
     double pay = 0;
     String name;

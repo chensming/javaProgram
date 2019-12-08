@@ -3,52 +3,52 @@ import java.lang.Math;
 
 abstract class GeometricObject{
     protected String color;
-    protected Boolean IsFill;//ÊÇ·ñÌî³ä
+    protected Boolean IsFill;//æ˜¯å¦å¡«å……
 };
 
 class Triangle extends GeometricObject{
     Scanner in = new Scanner(System.in);
     private double a,b,c;
     Triangle(){
-        System.out.println("ÇëÊäÈëÈı½ÇĞÎµÄ±ß³¤");
+        System.out.println("è¯·è¾“å…¥ä¸‰è§’å½¢çš„è¾¹é•¿");
         a = in.nextDouble();
         b = in.nextDouble();
         c = in.nextDouble();
         while(a + b < c || a + c < b || b + c < a)
         {
-            System.out.println("Èı±ß²»¹¹³ÉÈı½ÇĞÎ");
-            System.out.println("ÇëÖØĞÂÊäÈëÈı½ÇĞÎµÄ±ß³¤");
-            // System.exit(1); ÒâÍâÍË³ö³ÌĞò·½·¨ Èô²ÎÊıÎª0´ú±íÕı³£ÍË³ö
+            System.out.println("ä¸‰è¾¹ä¸æ„æˆä¸‰è§’å½¢");
+            System.out.println("è¯·é‡æ–°è¾“å…¥ä¸‰è§’å½¢çš„è¾¹é•¿");
+            // System.exit(1); æ„å¤–é€€å‡ºç¨‹åºæ–¹æ³• è‹¥å‚æ•°ä¸º0ä»£è¡¨æ­£å¸¸é€€å‡º
             a = in.nextDouble();
             b = in.nextDouble();
             c = in.nextDouble();
         }  
-        System.out.println("ÇëÊäÈëÈı½ÇĞÎµÄÑÕÉ«,Èçblue»òÀ¶É«"); 
+        System.out.println("è¯·è¾“å…¥ä¸‰è§’å½¢çš„é¢œè‰²,å¦‚blueæˆ–è“è‰²"); 
         color = in.next();
-        System.out.println("ÇëÊäÈëÊÇ·ñÌî³ä,true/false");
+        System.out.println("è¯·è¾“å…¥æ˜¯å¦å¡«å……,true/false");
         String str = in.next();
         IsFill = Boolean.parseBoolean(str);
     }
 
     public void showSide(){
-        System.out.println("Èı±ß·Ö±ğÊÇ " + a + " " + b + " " + c );
+        System.out.println("ä¸‰è¾¹åˆ†åˆ«æ˜¯ " + a + " " + b + " " + c );
     }
 
     public void showColor(){
-        System.out.println("ÑÕÉ«ÊÇ " + color);
+        System.out.println("é¢œè‰²æ˜¯ " + color);
     }
 
     public void showIsFill(){
-        System.out.println("Ìî³ä£¿" + IsFill);
+        System.out.println("å¡«å……ï¼Ÿ" + IsFill);
     }
 
     public void showPerimeter(){
-        System.out.println("ÖÜ³¤: " + (a + b + c));
+        System.out.println("å‘¨é•¿: " + (a + b + c));
     }
 
     public void showArea(){
         double s = (a + b + c) / 2;
-        System.out.println("Ãæ»ı: " + Math.sqrt(s * (s - a) * (s - b) * (s - c)));
+        System.out.println("é¢ç§¯: " + Math.sqrt(s * (s - a) * (s - b) * (s - c)));
     }
 
     

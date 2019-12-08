@@ -51,7 +51,7 @@ public class J_Time{
             int k = i;
             for(int j = k + 1; j < numbers.length - 1; j++){
                 if(numbers[j] < numbers[k])
-                    k = j;  //�洢��Сֵ
+                    k = j;  //´æ´¢×îÐ¡Öµ
             }
             if(i != k){
                 int temp = numbers[i];

@@ -1,24 +1,24 @@
 
 class Car{
-    private int enterYear; //进站年份
+    private int enterYear; //杩涚珯骞翠唤
     private int enterMonth;
     private int enterDay;
     private int enterHour;
     private int enterMinute;
     private int enterSecond;
-    private int exitYear; //离站年份
+    private int exitYear; //绂荤珯骞翠唤
     private int exitMonth;
     private int exitDay;
     private int exitHour;
     private int exitMinute;
     private int exitSecond;
-    private String enterStation; //进站名称
-    private String exitStation; //离站名称
-    private String color; //车的颜色
-    private String band; //车的牌子
-    private String size; //车子大小，如七座一下轿车，大货车，大客车等
+    private String enterStation; //杩涚珯鍚嶇О
+    private String exitStation; //绂荤珯鍚嶇О
+    private String color; //杞︾殑棰滆壊
+    private String band; //杞︾殑鐗屽瓙
+    private String size; //杞﹀瓙澶у皬锛屽涓冨骇涓�涓嬭娇杞︼紝澶ц揣杞︼紝澶у杞︾瓑
 
-    //进站信息函数
+    //杩涚珯淇℃伅鍑芥暟
     public int getEnterYear(){
         return enterYear;
     }
@@ -67,7 +67,7 @@ class Car{
         this.enterSecond = second;
     }
 
-    //离站信息函数
+    //绂荤珯淇℃伅鍑芥暟
     public int getExitYear(){
         return exitYear;
     }
@@ -117,7 +117,7 @@ class Car{
     }
     
     
-    //车子进站出站
+    //杞﹀瓙杩涚珯鍑虹珯
     public String getStation(){
         return enterStation;
     }
@@ -135,7 +135,7 @@ class Car{
     }
 
 
-    //车子颜色color，大小size，牌子band
+    //杞﹀瓙棰滆壊color锛屽ぇ灏弒ize锛岀墝瀛恇and
     public String getColor(){
         return color;
     }
