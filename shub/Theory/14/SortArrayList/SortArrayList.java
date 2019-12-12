@@ -31,6 +31,8 @@ public class SortArrayList {
             //print the words
             for (int i = 0; i < words.size(); i++)
                 System.out.println(words.get(i));
+
+            //for (String word : words) System.out.println(word);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
