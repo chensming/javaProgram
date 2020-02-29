@@ -43,11 +43,6 @@ public class UDPTextFileServer
 			os.write(data, 0, dp.getLength());
 			System.out.println("文件接收成功");
 
-
-
-
-
-
 		} catch (SocketException e)
 		{
 			e.printStackTrace();
